@@ -456,10 +456,41 @@ details.mr .in p, details.mr .in li { font-size: 14.5px; }
 @container (max-width: 480px) { .cifry { grid-template-columns: 1fr; } }
 
 @media print { .top, nav.rail { display: none; } .layout { display: block; } .doc { border: 0; } }
+/* Памятка «Перед отправкой документа Hermes» (правило отдела № 1): над оглавлением и текстом, на всю ширину */
+.pered { margin: 0; padding: 14px clamp(14px, 4vw, 40px) 12px; background: #fbecea; border-bottom: 3px solid #a3312b; color: #1d2433; }
+.pered summary { cursor: pointer; font-size: 18px; color: #a3312b; }
+.pered-rule { margin: 8px 0 10px; max-width: 1100px; }
+.pered-cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 32px; max-width: 1100px; font-size: 15px; }
+.pered-cols ul { margin: 4px 0 6px; padding-left: 20px; }
+.pered-cols p { margin: 4px 0; }
+.pered-pdf { margin: 8px 0 0; font-size: 15px; }
+.pered-pdf a { color: #a3312b; font-weight: 700; }
+@media (max-width: 760px) { .pered-cols { grid-template-columns: 1fr; } .pered summary { font-size: 16.5px; } }
 </style>
 </head>
 <body>
 <header class="top"><button class="menu-btn" id="menu" type="button" aria-expanded="false" aria-controls="rail">☰ Оглавление</button><b>Улей юротдела</b></header>
+<details class="pered" id="pered-otpravkoy" open>
+<summary><b>Перед отправкой документа Hermes: правило отдела № 1</b></summary>
+<p class="pered-rule">Пока не подтверждены условия доступа третьих лиц и хранения данных, персональные данные, названия компаний
+и ФИО обезличиваем <b>обязательно</b>. Hermes сам скрыть данные не может: обезличивать нужно до отправки.</p>
+<div class="pered-cols">
+<div><b>1. Заменить везде, одинаково по всему документу</b>
+<ul><li>ФИО → [ФИО 1], [ФИО 2]</li><li>Названия компаний, включая нашу → «Компания А», «Контрагент Б»</li>
+<li>Паспорт, СНИЛС, ИНН, ОГРН, КПП → [удалено]</li><li>Адреса, телефоны, e-mail, сайты → [удалено]</li>
+<li>Банковские реквизиты → [удалено]</li></ul>
+<p>Таблицу «кто есть кто» держи у себя и не присылай.</p>
+<p><b>2. Оставить:</b> суммы, сроки, условия, нумерацию пунктов. Без них риски не оценить.</p>
+<p><b>3. Как быстро:</b> Word → Ctrl+H → «Заменить все», по каждому лицу отдельно.</p></div>
+<div><b>4. Где данные остаются чаще всего</b>
+<ul><li>колонтитулы, реквизиты и подписи в конце, приложения;</li>
+<li>примечания и режим исправлений: там видны имена авторов правок;</li>
+<li>свойства файла: Файл → Сведения → Проверить документ → Инспектор документов → удалить сведения об авторе;</li>
+<li>сканы: подписи, печати, штампы;</li><li>переписка и скриншоты: имена, подписи в письмах, адреса.</li></ul>
+<p><b>5. Сомневаешься — не отправляй.</b> Сначала спроси руководителя отдела.</p></div>
+</div>
+<p class="pered-pdf"><a href="files/pamyatka-pered-otpravkoy.pdf" download>Памятка одной страницей, PDF</a> — для рассылки и закрепления в рабочих чатах</p>
+</details>
 <div class="layout">
 <nav class="rail" id="rail" aria-label="Оглавление">
 <button class="rail-x" id="rail-x" type="button">✕ Закрыть оглавление</button>
@@ -523,7 +554,7 @@ Word с вопросами оставлен для печати. Отвечат�
 <div class="soty" aria-label="Соты улья: из чего он состоит">
 <div class="row">
 <div class="hex"><b>Законы</b><span>статьи дословно, с редакцией</span><i class="st ok">90 статей</i></div>
-<div class="hex"><b>Правила отдела</b><span>чек-лист, матрица рисков, позиции</span><i class="st warn">пока пусто</i></div>
+<div class="hex"><b>Правила отдела</b><span>чек-лист, матрица рисков, позиции</span><i class="st ok">1 правил</i></div>
 <div class="hex"><b>Поручения</b><span>задания агентам на повторяющиеся дела</span><i class="st warn">пока в черновиках</i></div>
 <div class="hex"><b>Паспорта проектов</b><span>схема проекта на одной странице</span><i class="st warn">только шаблон</i></div>
 </div>
