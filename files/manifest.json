@@ -25,11 +25,11 @@
       "files": [
         {
           "name": "marshruty-42.docx",
-          "bytes": 196092
+          "bytes": 197399
         },
         {
           "name": "marshruty-42.pdf",
-          "bytes": 3120344
+          "bytes": 3132109
         }
       ]
     },
@@ -41,11 +41,11 @@
       "files": [
         {
           "name": "slovar-roley.docx",
-          "bytes": 17804
+          "bytes": 18090
         },
         {
           "name": "slovar-roley.pdf",
-          "bytes": 204231
+          "bytes": 205848
         }
       ]
     },
@@ -57,7 +57,7 @@
       "files": [
         {
           "name": "marshruty-json.zip",
-          "bytes": 139313
+          "bytes": 140014
         }
       ]
     },
