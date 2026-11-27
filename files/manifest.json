@@ -25,11 +25,11 @@
       "files": [
         {
           "name": "marshruty-42.docx",
-          "bytes": 200435
+          "bytes": 201272
         },
         {
           "name": "marshruty-42.pdf",
-          "bytes": 3142656
+          "bytes": 3150835
         }
       ]
     },
@@ -57,7 +57,7 @@
       "files": [
         {
           "name": "marshruty-json.zip",
-          "bytes": 142528
+          "bytes": 142823
         }
       ]
     },
