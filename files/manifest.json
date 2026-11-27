@@ -9,11 +9,11 @@
       "files": [
         {
           "name": "voprosy-dashe-marshruty.docx",
-          "bytes": 74230
+          "bytes": 74209
         },
         {
           "name": "voprosy-dashe-marshruty.pdf",
-          "bytes": 606450
+          "bytes": 607656
         }
       ]
     },
@@ -25,11 +25,11 @@
       "files": [
         {
           "name": "marshruty-42.docx",
-          "bytes": 197805
+          "bytes": 197640
         },
         {
           "name": "marshruty-42.pdf",
-          "bytes": 3137799
+          "bytes": 3119890
         }
       ]
     },
@@ -57,7 +57,7 @@
       "files": [
         {
           "name": "marshruty-json.zip",
-          "bytes": 140271
+          "bytes": 141242
         }
       ]
     },
